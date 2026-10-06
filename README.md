@@ -4,7 +4,7 @@ Sito statico per GitHub Pages. Tutti i collegamenti interni sono relativi: funzi
 
 ## Prima di pubblicare
 
-In **index.html** e **privacy.html** sono gi? inseriti il responsabile del progetto, **Gianluca Garofalo**, e il contatto pubblico **gianluca.garofalo@gmail.com**, con collegamento email.
+In **index.html** e **privacy.html** sono già inseriti il responsabile del progetto, **Gianluca Garofalo**, e il contatto pubblico **gianluca.garofalo@gmail.com**, con collegamento email.
 
 La privacy descrive il comportamento dell’implementazione attuale: Calendar personale, modello locale predefinito, eventuale motore remoto configurabile, token cifrati, chat memorizzate, backup e condivisione esplicita. Conferma le informazioni del responsabile e le condizioni della tua distribuzione prima della pubblicazione. Questa pagina non costituisce un’approvazione Google.
 
@@ -30,7 +30,7 @@ Inserisci gli URL finali in **Google Auth Platform → Branding**. Il client des
 
 ## Verifica Google Calendar
 
-Il connettore standard richiede soltanto `https://www.googleapis.com/auth/calendar.events`: non dichiarare permessi Gmail o Drive non utilizzati dall’app. Pubblicazione dell’app, verifica del branding e verifica dei permessi sono passaggi distinti. Google può richiedere giustificazione e video dimostrativo del flusso effettivo.
+Il connettore Calendar richiede `https://www.googleapis.com/auth/calendar.events`. Gli scope Gmail e Drive sono elencati sotto. Pubblicazione dell’app, verifica del branding e verifica dei permessi sono passaggi distinti. Google può richiedere giustificazione e video dimostrativo del flusso effettivo.
 
 Quando l’URL privacy è definitivo, il riferimento e una descrizione del trattamento devono essere disponibili anche nell’applicazione prima della richiesta di consenso. Non usare URL inventati o provvisori nella release pubblica. Il sito da solo non completa questa parte della verifica.
 
@@ -48,4 +48,4 @@ Fonti: [requisiti Google](https://developers.google.com/identity/protocols/oauth
 
 ## Drive e Gmail
 
-La home e la privacy includono sezioni sulle integrazioni previste di Drive e Gmail. Attualmente il connettore incluso gestisce soltanto Calendar: non dichiarare Drive e Gmail come funzioni gi? disponibili nella verifica Google. Prima del rilascio, implementare i connettori e aggiornare funzioni, scope effettivi e informativa.
+I connettori sono inclusi nell’app: Gmail cerca e legge email e invia messaggi di testo dopo conferma; Drive cerca file, legge metadati ed esporta Google Docs come testo o Google Sheets come CSV. Gli scope sono `gmail.readonly`, `gmail.send` e `drive.readonly` (prefisso `https://www.googleapis.com/auth/`). Aggiungili in Google Auth Platform → Data Access prima della verifica. I due scope readonly sono restricted: la verifica pubblica può richiedere controlli aggiuntivi, in particolare se dati Google vengono trasmessi a servizi remoti.
