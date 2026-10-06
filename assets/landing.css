@@ -1,0 +1,17 @@
+.feature-section{border-top:1px solid var(--line)}
+.feature-grid .card{background:transparent}
+.feature-number{display:block;color:#859487;font-size:12px;font-weight:650;letter-spacing:2px;margin-bottom:22px}
+.feature-note{margin-top:28px;padding:26px 30px;background:var(--soft);border-radius:14px}
+.feature-note p{font-size:14px;color:var(--muted);margin:8px 0 0}
+.how-panel a{color:#f6f8f2}
+.connection-intro{max-width:800px;color:var(--muted);margin-bottom:32px}
+.google-cards .eyebrow{font-size:10px;letter-spacing:1px;margin-bottom:12px}
+.example{font-size:13px;padding-top:16px;margin-top:22px;border-top:1px solid var(--line);color:var(--green)}
+.connect-panel{display:flex;align-items:center;gap:40px;justify-content:space-between;margin-top:28px;padding:32px;background:var(--soft);border-radius:16px}
+.connect-panel>div{max-width:780px}
+.connect-panel p{font-size:14px;color:var(--muted)}
+.connect-panel p:last-child{margin-bottom:0}
+.connect-panel>a{flex-shrink:0}
+.calendar-section .button{margin-top:12px}
+@media(max-width:900px){.connect-panel{flex-direction:column;align-items:flex-start;gap:16px}}
+@media(max-width:700px){.feature-note,.connect-panel{padding:24px}}
