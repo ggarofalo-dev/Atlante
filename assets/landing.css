@@ -26,6 +26,9 @@ html:has(.landing-header){scroll-padding-top:120px}
 .privacy-hero .lead{font-size:17px}
 .privacy-hero .lead strong{font-weight:600;color:var(--ink)}
 .privacy-hero .hero-note{max-width:530px;font-size:12px;line-height:1.7}
+.privacy-hero .preview{transform:rotate(2deg);box-shadow:0 28px 80px #315f531a}
+.preview-brand{display:flex;align-items:center;gap:8px}
+@media(max-width:700px){.privacy-hero .preview{transform:none}}
 .local-scene{position:relative;background:linear-gradient(150deg,#f1f5e9,#e6eee2);border:1px solid #cfdcc9;border-radius:26px;padding:24px;box-shadow:0 28px 80px #315f5312;overflow:hidden}
 .scene-heading{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600}
 .scene-status{margin-left:auto;display:flex;align-items:center;gap:5px;font-size:10px;font-weight:500;background:#fff9;border:1px solid #d5dfcf;border-radius:20px;padding:5px 9px}
