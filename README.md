@@ -1,5 +1,7 @@
 # Sito pubblico di Atlante
 
+La home contiene le istruzioni e il download relativo `atlante.zip`. Pubblica anche questo file, già copiato dall’installer in `distribute/Atlante-Windows-Easy.zip`. Quando aggiorni l’installer, ricopia il nuovo ZIP in questa cartella con il nome `atlante.zip` e pubblicalo insieme alle pagine.
+
 Sito statico per GitHub Pages. Tutti i collegamenti interni sono relativi: funziona anche sotto `https://NOME.github.io/REPOSITORY/`.
 
 ## Prima di pubblicare
